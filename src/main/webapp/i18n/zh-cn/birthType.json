@@ -1,0 +1,9 @@
+{
+  "rosterServer2App": {
+    "BirthType": {
+      "null": "",
+      "LUNAR": "LUNAR",
+      "CALENDAR": "CALENDAR"
+    }
+  }
+}

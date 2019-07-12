@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.cc",
+      "nativeLanguage": "zh-cn"
+    },
+    "jhipsterVersion": "6.1.2",
+    "applicationType": "monolith",
+    "baseName": "RosterServer2",
+    "packageName": "com.cc",
+    "packageFolder": "com/cc",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YzI3NGM5NDk2Nzg3MzAxZDlkOWY1ODUzMzdlN2YwYzFhMTg0MDJkNzNhNWUwNzFmMTZiODQ1ZGNiNDgyOTAyMDY3MDQ2M2JmNTg4NGMzZGRhZTIxOGJiNDg4MjI2YzU2N2VkMDhmNGRlZjZiZjlhZTkyMDc4MWZmOGU0NTllYzU=",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "zh-cn",
+    "languages": ["zh-cn"]
+  }
+}
