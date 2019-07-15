@@ -100,7 +100,7 @@ public class EnumIdTypeResource {
      * @return the {@link ResponseEntity} with status {@code 200 (OK)} and the list of enumIdTypes in body.
      */
     @GetMapping("/enum-id-types")
-    public ResponseEntity<List<EnumIdTypeDTO>> getAllEnumIdTypes(EnumIdTypeCriteria criteria, Pageable pageable, @RequestParam MultiValueMap<String, String> queryParams, UriComponentsBuilder uriBuilder) {
+    public ResponseEntity<List<EnumIdTypeDTO>> getAllEnumIdTypes(EnumIdTypeCriteria criteria, Pageable pageable, @RequestParam(required = false) MultiValueMap<String, String> queryParams, UriComponentsBuilder uriBuilder) {
         log.debug("REST request to get EnumIdTypes by criteria: {}", criteria);
         Page<EnumIdTypeDTO> page = enumIdTypeQueryService.findByCriteria(criteria, pageable);
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(uriBuilder.queryParams(queryParams), page);

@@ -11,9 +11,9 @@ import java.util.stream.Collectors;
 public class EntityUtil {
 
     /**
-     * 验证实体对象的关系绑定是否正确
-     * 多对一，是否绑定了空对象（没有id的对象）
-     * 一对多，是否集合中都是空对象
+     * 把实体对象的关系正确
+     * 多对一，是否绑定了空对象（没有id的对象），有则去除（set null）
+     * 一对多，去除集合中都是空对象（所有属性都是null的对象），有则去除（set null），集合对象本身会保留
      */
     public static void deleteEmptyRelation(Object entity) {
         // 遍历属性

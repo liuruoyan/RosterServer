@@ -100,7 +100,7 @@ public class EnumContractTypeResource {
      * @return the {@link ResponseEntity} with status {@code 200 (OK)} and the list of enumContractTypes in body.
      */
     @GetMapping("/enum-contract-types")
-    public ResponseEntity<List<EnumContractTypeDTO>> getAllEnumContractTypes(EnumContractTypeCriteria criteria, Pageable pageable, @RequestParam MultiValueMap<String, String> queryParams, UriComponentsBuilder uriBuilder) {
+    public ResponseEntity<List<EnumContractTypeDTO>> getAllEnumContractTypes(EnumContractTypeCriteria criteria, Pageable pageable, @RequestParam(required = false) MultiValueMap<String, String> queryParams, UriComponentsBuilder uriBuilder) {
         log.debug("REST request to get EnumContractTypes by criteria: {}", criteria);
         Page<EnumContractTypeDTO> page = enumContractTypeQueryService.findByCriteria(criteria, pageable);
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(uriBuilder.queryParams(queryParams), page);
